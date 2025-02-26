@@ -1,0 +1,356 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #ffb900;
+  --font-heading: Sen, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+/* Common */
+
+.desc {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 1.67; /* 166.667% */
+}
+
+.heading {
+  font-family: var(--font-heading);
+  background: #fff;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #171100;
+}
+
+.heading.lv1 {
+  font-size: 5.8rem;
+  line-height: 1.17;
+}
+
+.heading.lv2 {
+  font-size: 3.8rem;
+  line-height: 1.26;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 0 16px;
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ffffff;
+  background: #171100;
+  border-radius: 999px;
+}
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+}
+
+.main-content {
+  width: 1170px; /* chinh sua doan nay */
+  max-width: calc(100% - 48px); /* thu nho khong bi mat chu */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+.break-all {
+  word-break: break-all;
+}
+/* Header */
+
+.header {
+  background: #fffcf4;
+}
+
+.nav-bar {
+  margin-left: auto;
+}
+
+.header .row {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+
+.nav-bar a:hover,
+.nav-bar li.active a {
+  text-shadow: 1px 0 0 currentColor;
+  color: #171100;
+  position: relative;
+}
+
+.nav-bar a {
+  /* background-color: #000; */
+  padding: 8px 21px;
+  color: #5f5b53;
+  font-size: 1.6rem;
+}
+
+.nav-bar li.active a::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #171100;
+  left: 21px;
+  bottom: 6px;
+}
+
+.header .action {
+  margin-left: 49px;
+}
+
+.header .sign-up {
+  min-width: 144px;
+}
+
+/* Hero left */
+
+.hero {
+  padding: 56px 0 65px;
+  background: #fffcf4;
+}
+
+.hero .media-block {
+  position: relative;
+  width: 48%;
+}
+
+.hero .media-block .img {
+  display: block; /* loai bo phan khoang khong mac dinh cua the img (cach 2: vertical:bottom */
+  width: 470px;
+  height: 685px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.hero-summary {
+  position: absolute;
+  right: 0; /* right : 0px ? */
+  bottom: 48px;
+  width: 270px;
+  padding: 24px;
+  background: #ffffff;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+.hero-summary .item {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
+.hero-summary .item + .item {
+  margin-top: 22px;
+}
+.hero-summary .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fff9e8;
+}
+
+.hero-summary .icon-2 {
+  background: #fcefff;
+}
+
+.hero-summary .icon-3 {
+  background-color: #ebeaff;
+}
+
+/* .hero-summary .info {
+  margin-left: 16px;
+} */
+
+.hero-summary .qty {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.876;
+}
+
+.hero-summary .title {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+
+/* Hero right */
+
+.hero .content-block {
+  width: 52%;
+  padding: 64px 0 0 130px;
+}
+
+.hero .content-block .main-desc {
+  margin-top: 22px;
+}
+
+.hero .cta-group {
+  /* background-color: orange; */
+  display: flex;
+  align-items: center;
+  margin: 38px 0 48px;
+  gap: 28px;
+}
+
+.hero-cta {
+  min-width: 180px;
+  line-height: 64px;
+  background-color: var(--primary-color);
+}
+
+.hero .watch-video {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hero .watch-video .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+.hero .watch-video span {
+  margin-left: 14px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #171100;
+}
+
+.hero .stats {
+  margin: 8px 0 0 -28px; /* -28 thay cho strong:firstchild */
+}
+
+.hero .stats strong {
+  padding: 0 8px 0 28px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 4.4rem;
+  line-height: 1.23;
+  color: #171100;
+}
+
+/* Popular */
+.popular {
+  background: #fff;
+  margin: 200px 0 200px;
+}
+
+.left .desc {
+  margin-top: 16px;
+}
+
+.popular .row:first-of-type {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.course {
+  margin-top: 55px;
+}
+
+.card {
+  width: 370px;
+  height: 466px;
+  border-radius: 12px;
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.card-img {
+  width: 370px;
+  height: 278px;
+  object-fit: cover;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.card > .row {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 22px;
+}
+
+.card .title {
+  margin-top: 16px;
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
+}
+
+.card .desc {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+  padding: 6px 22px 12px;
+}
+
+.row .price {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+
+.row .link {
+  min-width: 118px;
+  background: #ffb900;
+  font-size: 1.4rem;
+  line-height: 50px; /* 185.714% */
+}
+
+/* Feedback */
