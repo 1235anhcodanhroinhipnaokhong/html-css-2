@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 :root {
   --primary-color: #ffb900;
   --font-heading: Sen, sans-serif;
@@ -13,8 +14,10 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   font-size: 1.6rem;
+  line-height: 1.75;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -27,18 +30,16 @@ body {
 
 .small {
   font-size: 1.4rem;
-  line-height: 26px; /* 185.714% */
+  line-height: 26px;
 }
 
 .large {
   font-size: 1.8rem;
-  line-height: 30px; /* 166.667% */
+  line-height: 30px;
 }
 
 .desc {
   color: var(--p-tag-color);
-  font-size: 1.8rem;
-  line-height: 1.67; /* 166.667% */
 }
 
 .heading {
@@ -64,12 +65,12 @@ body {
   padding: 0 16px;
   line-height: 50px;
   font-weight: 600;
-  font-size: 1.6rem;
   text-align: center;
   color: #ffffff;
   background: var(--emphasize-color);
   border-radius: 999px;
 }
+
 .btn:hover {
   opacity: 0.9;
   cursor: pointer;
@@ -84,8 +85,10 @@ a {
 }
 
 .main-content {
-  width: 1170px; /* chinh sua doan nay */
-  max-width: calc(100% - 48px); /* thu nho khong bi mat chu */
+  width: 1170px;
+  /* chinh sua doan nay */
+  max-width: calc(100% - 48px);
+  /* thu nho khong bi mat chu */
   margin-left: auto;
   margin-right: auto;
 }
@@ -104,6 +107,7 @@ a {
 .break-all {
   word-break: break-all;
 }
+
 /* Header */
 
 .header {
@@ -135,7 +139,6 @@ a {
   /* background-color: #000; */
   padding: 8px 21px;
   color: var(--p-tag-color);
-  font-size: 1.6rem;
 }
 
 .nav-bar li.active a::after {
@@ -171,7 +174,8 @@ a {
 }
 
 .hero .media-block .img {
-  display: block; /* loai bo phan khoang khong mac dinh cua the img (cach 2: vertical:bottom */
+  display: block;
+  /* loai bo phan khoang khong mac dinh cua the img (cach 2: vertical:bottom */
   width: 470px;
   height: 685px;
   object-fit: cover;
@@ -180,7 +184,8 @@ a {
 
 .hero-summary {
   position: absolute;
-  right: 0; /* right : 0px ? */
+  right: 0;
+  /* right : 0px ? */
   bottom: 48px;
   width: 270px;
   padding: 24px;
@@ -194,9 +199,11 @@ a {
   display: flex;
   align-items: center;
 }
+
 .hero-summary .item + .item {
   margin-top: 22px;
 }
+
 .hero-summary .icon {
   display: flex;
   align-items: center;
@@ -221,15 +228,14 @@ a {
 
 .hero-summary .qty {
   color: var(--p-tag-color);
-  font-size: 1.4rem;
+
   line-height: 1.876;
 }
 
 .hero-summary .title {
   color: var(--emphasize-color);
-  font-size: 1.8rem;
+
   font-weight: 600;
-  line-height: 1.67;
 }
 
 /* Hero right */
@@ -279,13 +285,13 @@ a {
 .hero .watch-video span {
   margin-left: 14px;
   font-weight: 600;
-  font-size: 1.8rem;
-  line-height: 1.67;
+
   color: var(--emphasize-color);
 }
 
 .hero .stats {
-  margin: 8px 0 0 -28px; /* -28 thay cho strong:firstchild */
+  margin: 8px 0 0 -28px;
+  /* -28 thay cho strong:firstchild */
 }
 
 .hero .stats strong {
@@ -339,30 +345,37 @@ a {
 .card .title {
   margin-top: 16px;
   color: var(--emphasize-color);
-  font-size: 1.8rem;
+
   font-weight: 600;
-  line-height: 1.67; /* 166.667% */
+}
+
+.card .rating .icon {
+  width: 18px;
+  height: 18px;
+}
+
+.card .rating span {
+  margin-left: 6px;
+  color: var(--primary-color);
 }
 
 .card .desc {
   color: var(--p-tag-color);
-  font-size: 1.4rem;
-  line-height: 1.86; /* 185.714% */
+
   padding: 6px 22px 12px;
 }
 
 .row .price {
   color: var(--emphasize-color);
-  font-size: 1.8rem;
+
   font-weight: 600;
-  line-height: 1.67;
 }
 
 .row .link {
   min-width: 118px;
   background: var(--primary-color);
-  font-size: 1.4rem;
-  line-height: 50px; /* 185.714% */
+
+  line-height: 50px;
 }
 
 /* Feedback */
@@ -395,15 +408,15 @@ a {
 .left .desc {
   margin-bottom: 28px;
   color: #bfbcb2;
-  font-size: 1.4rem;
+
   font-weight: 400;
-  line-height: 1.86; /* 185.714% */
 }
 
 .right {
   margin-left: 241px;
   padding: 96px 0;
 }
+
 .right .double-quotes {
   top: -10px;
   display: block;
@@ -415,7 +428,8 @@ a {
   color: #fff;
   font-size: 2.6rem;
   font-style: italic;
-  line-height: 1.54; /* 153.846% */
+  line-height: 1.54;
+  /* 153.846% */
 }
 
 /* Feature top*/
@@ -440,13 +454,17 @@ a {
 }
 
 .feature .row.top .content-block {
-  padding: 58px 0 69px; /* Bỏ padding-left */
-  margin-left: 130px; /* Thêm khoảng cách nhỏ nếu cần */
+  padding: 58px 0 69px;
+  /* Bỏ padding-left */
+  margin-left: 130px;
+  /* Thêm khoảng cách nhỏ nếu cần */
 }
 
 .feature .row.top .content-block {
-  padding: 58px 0 69px; /* Bỏ padding-left */
-  margin-left: 130px; /* Thêm khoảng cách nhỏ nếu cần */
+  padding: 58px 0 69px;
+  /* Bỏ padding-left */
+  margin-left: 130px;
+  /* Thêm khoảng cách nhỏ nếu cần */
 }
 
 .feature .content-block .row {
@@ -459,7 +477,6 @@ a {
 }
 
 .feature .row.top .desc {
-  font-size: 1.6rem;
 }
 
 .feature .feature-btn {
@@ -478,8 +495,10 @@ a {
 }
 
 .feature .row.bottom .content-block {
-  padding: 71px 0; /* Bỏ padding-left */
-  margin-right: 130px; /* Thêm khoảng cách nhỏ nếu cần */
+  padding: 71px 0;
+  /* Bỏ padding-left */
+  margin-right: 130px;
+  /* Thêm khoảng cách nhỏ nếu cần */
 }
 
 /* Blog  */
@@ -534,9 +553,8 @@ a {
 .date {
   position: relative;
   color: var(--p-tag-color);
-  font-size: 1.4rem;
+
   font-weight: 400;
-  line-height: 1.86; /* 185.714% */
 }
 
 .date p {
@@ -570,9 +588,9 @@ a {
 .item .title {
   margin-top: 24px;
   color: var(--emphasize-color);
-  font-size: 1.6rem;
+
   font-weight: 600;
-  line-height: 1.75; /* 175% */
+  line-height: 1.75;
 }
 
 .read-more {
@@ -602,8 +620,6 @@ footer .cta {
   padding: 18px 0 18px;
   max-width: 267px;
   color: #bfbcb2;
-  font-size: 1.4rem;
-  line-height: 1.86;
 }
 
 footer .row .row {
@@ -614,9 +630,9 @@ footer .row .row {
 footer .info .category-name {
   position: relative;
   color: #fff;
-  font-size: 1.6rem;
+
   font-weight: 600;
-  line-height: 1.75; /* 175% */
+  line-height: 1.75;
 }
 
 footer .info .category-name::after {
@@ -635,15 +651,14 @@ footer .info .list {
 
 footer .info ul li a {
   color: #bfbcb2;
-  font-size: 1.4rem;
-  line-height: 26px; /* 185.714% */
+
+  line-height: 26px;
 }
 
 footer .info strong {
   color: #fff;
-  font-size: 1.4rem;
+
   font-weight: 600;
-  line-height: 1.86; /* 185.714% */
 }
 
 footer .main-content > .row {
@@ -668,8 +683,6 @@ footer .copy-right {
 
 footer .copy-right p {
   color: #807d74;
-  font-size: 1.4rem;
-  line-height: 1.86; /* 185.714% */
 }
 
 footer .info {
